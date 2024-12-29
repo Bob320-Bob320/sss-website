@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon"
+        href="https://lh4.googleusercontent.com/nL6uh8NjjuKvjL7tvJoYoohpkzU3FGzRJGKNll2C-zuhUlFgxp7XvcLTM3TsSaP0fBL5qPYtIwx9WQcWxKo_dFw=w16383">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Courier+Prime&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Menu Button -->
+    <button class="menu-btn" onclick="toggleSidePanel()">☰</button>
+
+    <!-- Sidebar -->
+    <div id="sidePanel" class="side-panel">
+        <button id="closeBtn" class="close-btn" onclick="toggleSidePanel()">×</button>
+        <div class="menu-title">Menu</div>
+
+        <nav>
+            <a href="#" onclick="loadPage('home')">Home</a>
+            <a href="#" onclick="loadPage('anthem')">Anthem</a>
+
+            <!-- Animated Dropdown -->
+            <div class="nav-item">
+                <a href="#" class="dropdown-toggle">More Sections</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" onclick="loadPage('flag')">Flag</a></li>
+                    <li><a href="#" onclick="loadPage('about')">About</a></li>
+                    <li><a href="#" onclick="loadPage('how-to-join')">How to Join</a></li>
+                    <li><a href="#" onclick="loadPage('rules')">Rules</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content">
+        <!-- Home Section -->
+        <section id="home">
+            <div class="header">
+                <div class="overlay-text">
+                    <div class="line-top">Socialist State of</div>
+                    <div class="line-bottom">Stalingrad</div>
+                </div>
+            </div>
+            <div class="text-below">
+                <h1>Welcome to the SSS Website</h1>
+                <p>This is the official website of the S.S.S. Feel free to explore the pages to find what you need. For
+                    concerns or propositions, please contact one of our officials via the Contact and Support section.</p>
+                <div class="Gov-status">
+                    <p>PLEASE NOTE: The S.S.S. government is currently active.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" style="display: none;">
+            <div class="header">
+                <div class="overlay-text">
+                    <div class="line-top">About</div>
+                    <div class="line-bottom">The SSS</div>
+                </div>
+            </div>
+            <div class="text-below">
+                <h1>About the SSS</h1>
+                <p>Learn about the history, mission, and structure of the Socialist State of Stalingrad (SSS).</p>
+            </div>
+        </section>
+
+        <!-- Anthem Section -->
+        <section id="anthem" style="display: none;">
+            <div class="header">
+                <div class="overlay-text">
+                    <div class="line-top">National</div>
+                    <div class="line-bottom">Anthem</div>
+                </div>
+            </div>
+            <div class="text-below">
+                <h1>The National Anthem</h1>
+                <p>This page will feature the National Anthem of the SSS.</p>
+            </div>
+        </section>
+
+        <!--Rules Section-->
+        <section id="rules" style="display: none;";>
+            <div class="header">
+                <div class="overlay-text">
+                    <div class="line-top">Rules</div>
+                </div>
+            </div>
+            <div class="text-below">
+                <h1>The Rules and Guidlines</h1>
+                <p>This is the Rules and Guidlines page</p>
+            </div>
+        </section>
+
+        <!--How to Join Section-->
+        <section id="how-to-join" style="display: none;";>
+            <div class="header">
+                <div class="overlay-text">
+                    <div class="line-top">How to Join</div>
+                </div>
+            </div>
+            <div class="text-below">
+                <h1>How to Join</h1>
+                <p>This will be instructions on how to join</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section id="contact">
+            <div class="text-below">
+                <h2>Contact and Support</h2>
+                <p>For help, please contact our officials:</p>
+                <ul>
+                    <li><strong>President - Josiah Stone:</strong> <a href="mailto:josiah.stone@stu.evsck12.com">josiah.stone@stu.evsck12.com</a></li>
+                    <li><strong>Vice President - Larzen Ellington:</strong> <a href="mailto:larzen.ellington@stu.evsck12.com">larzen.ellington@stu.evsck12.com</a></li>
+                    <li><strong>Caelyn Goolsby:</strong> <a href="mailto:caelyn.goolsby@gmail.com">caelyn.goolsby@gmail.com</a></li>
+                    <li><strong>Head of Military - Tyson Boerner:</strong> <a href="mailto:tyson.boerner@stu.evsck12.com">tyson.boerner@stu.evsck12.com</a></li>
+                    <li><strong>Avery Purviance:</strong> <a href="mailto:avery.purviance@stu.evsck12.com">avery.purviance@stu.evsck12.com</a></li>
+                    <li><strong>Head of Global Affairs - Gavin Mitchell:</strong> <a href="mailto:gavin.mitchell@stu.evsck12.com">gavin.mitchell@stu.evsck12.com</a></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
